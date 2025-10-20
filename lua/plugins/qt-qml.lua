@@ -8,7 +8,7 @@ return {
 					cmd = { "qmlls" },
 					filetypes = { "qml" },
 					root_dir = function(fname)
-						return require("lspconfig.util").find_git_ancestor(fname) or vim.fn.getcwd()
+						return vim.fn.getcwd()
 					end,
 					settings = {},
 				},
@@ -42,4 +42,3 @@ return {
 		ft = { "qml" },
 	},
 }
-
