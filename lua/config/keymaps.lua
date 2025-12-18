@@ -32,3 +32,5 @@ vim.keymap.set("n", "<leader>ccF", "<cmd>CMakeShowTargetFiles<cr>", { desc = "CM
 vim.keymap.set("n", "<leader>ccq", "<cmd>CMakeQuickStart<cr>", { desc = "CMake Quick Start" })
 vim.keymap.set("n", "<leader>ccS", "<cmd>CMakeSettings<cr>", { desc = "CMake Settings" })
 vim.keymap.set("n", "<leader>cco", "<cmd>CMakeTargetSettings<cr>", { desc = "CMake Target Settings" })
+
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { buffer = bufnr, desc = "LSP Rename" })
